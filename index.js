@@ -6,3 +6,9 @@ const client = new discord.Client({
         "MessageContent" 
     ]
 })
+
+bot.on("Ready", function (){
+    console.log(`${bot.user.username} Is Online!`);
+});
+
+bot.login(process.env.token);
