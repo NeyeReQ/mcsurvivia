@@ -1,6 +1,5 @@
 const discord = require("discord.js")
 
-const TOKEN = "MY TOKEN"
 const client = new discord.Client({
     intents: [
         "Guilds",
@@ -14,4 +13,3 @@ bot.on("Ready", function (){
 });
 
 bot.login(process.env.token);
-client.login(TOKEN)
