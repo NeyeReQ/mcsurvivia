@@ -1,8 +1,8 @@
-const Discord = require('discord.js');
-const bot = new Discord.Client();
-
-bot.on("Ready", function (){
-    console.log(`${bot.user.username} Is Online!`);
-});
-
-bot.login(process.env.token);
+const discord = require("discord.js")
+const client = new discord.Client({
+    intents: [
+        "Guilds",
+        "GuildMessages",
+        "MessageContent" 
+    ]
+})
